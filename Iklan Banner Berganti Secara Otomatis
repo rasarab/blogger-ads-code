@@ -1,0 +1,21 @@
+<script type="text/javascript">
+var imgs1 = new Array("URL Banner-A","URL Banner-B","URL Banner-C","URL Banner-D");
+var lnks1 = new Array("URL Tujuan-A","URL Tujuan-B","URL Tujuan-C","URL Tujuan-D");
+var alt1 = new Array("Teks Iklan-A","Teks Iklan-B","Teks Iklan-C","Teks Iklan-D");
+var currentAd1 = 0;
+var imgCt1 = 4;
+function cycle1() {
+if (currentAd1 == imgCt1) {
+currentAd1 = 0;
+}
+var banner1 = document.getElementById('adBanner1');
+var link1 = document.getElementById('adLink1');
+banner1.src=imgs1[currentAd1]
+banner1.alt=alt1[currentAd1]
+document.getElementById('adLink1').href=lnks1[currentAd1]
+currentAd1++;
+}
+window.setInterval("cycle1()",5000);
+</script>
+<a href=""link iklan-1"" id="adLink1" target="_blank">
+<img src="link gambar iklan-1" id="adBanner1" border="0" width="350" height="250" /></a>
